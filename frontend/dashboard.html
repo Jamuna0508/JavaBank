@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard - JavaBank</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a class="logo" href="index.html">JavaBank</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#" id="logoutLink">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container dashboard">
+    <h2 id="welcome">Welcome</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Balance</h3>
+        <p id="balanceView">₹0.00</p>
+      </div>
+      <div class="card">
+        <h3>Deposit</h3>
+        <input id="depositAmt" type="number" min="1" />
+        <button id="depositBtn" class="btn">Deposit</button>
+      </div>
+      <div class="card">
+        <h3>Withdraw</h3>
+        <input id="withdrawAmt" type="number" min="1" />
+        <button id="withdrawBtn" class="btn">Withdraw</button>
+      </div>
+      <div class="card">
+        <h3>Mini Statement (last 5)</h3>
+        <ul id="statement"></ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2025 JavaBank</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

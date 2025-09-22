@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register - JavaBank</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <a class="logo" href="index.html">JavaBank</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html" class="active">Register</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container form-wrap">
+    <h2>Create account</h2>
+    <form id="registerForm">
+      <label>Full name</label>
+      <input id="name" required />
+      <label>Password (PIN)</label>
+      <input id="password" type="password" required />
+      <label>Initial deposit</label>
+      <input id="balance" type="number" min="0" value="0" required />
+      <button type="submit" class="btn">Register</button>
+    </form>
+    <p class="muted">After register you'll be redirected to login. This demo stores data in browser localStorage.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2025 JavaBank</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
